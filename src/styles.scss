@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+html {
+    background: #151D2E;
+}
+
+body {
+    background: #151D2E;
+    margin: 0 auto;
+    background-position: 50% 50%;
+}

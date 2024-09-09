@@ -1,0 +1,59 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #151D2E;
+    max-width: 1920px;
+
+    .nav-box {
+        display: flex;
+        padding: 24px 100px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 0.31px;
+    }
+
+    .dot {
+        position: relative;
+        color: white;
+      }
+      
+      .dot::after {
+        content: '•'; 
+        position: absolute;
+        top: -9px; 
+        left: 0px;  
+        color: #8A2BE2; 
+        font-size: 0.8em; 
+      }
+
+      .styled-n {
+        display: inline-block;
+        position: relative;
+    }
+
+    .left-n {
+        color: white;
+        position: absolute;
+        clip-path: inset(0 50% 0 0); /* Schneidet die rechte Hälfte ab */
+    }
+    
+    .right-n {
+        color: #70E61C;
+        position: absolute;
+        clip-path: inset(0 0 0 50%); /* Schneidet die linke Hälfte ab */
+    }
+    
+}
