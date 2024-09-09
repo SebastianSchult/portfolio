@@ -9,9 +9,10 @@ nav {
 
     .nav-box {
         display: flex;
+        flex-direction: row;
         padding: 24px 100px;
-        gap: 16px;
-        justify-content: center;
+        gap: 29px;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -23,6 +24,11 @@ nav {
         color: white;
         text-decoration: none;
         letter-spacing: 0.31px;
+        
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .dot {
@@ -31,12 +37,13 @@ nav {
       }
       
       .dot::after {
-        content: '•'; 
+        content: ''; 
         position: absolute;
-        top: -9px; 
-        left: 0px;  
-        color: #8A2BE2; 
-        font-size: 0.8em; 
+        top: 11px; 
+        left: 1.45px;  
+        background-color: #8A2BE2; 
+        height: 9px;
+        width: 9px;
       }
 
       .styled-n {
@@ -47,13 +54,34 @@ nav {
     .left-n {
         color: white;
         position: absolute;
-        clip-path: inset(0 50% 0 0); /* Schneidet die rechte Hälfte ab */
+        clip-path: inset(0 50% 0 0); 
     }
     
     .right-n {
         color: #70E61C;
         position: absolute;
-        clip-path: inset(0 0 0 50%); /* Schneidet die linke Hälfte ab */
+        clip-path: inset(0 0 0 50%); 
+    }
+
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .navbar-link {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        color: white;
+        margin: 0 16px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: #9647FE;
+        }
     }
     
 }
