@@ -83,5 +83,19 @@ nav {
             color: #9647FE;
         }
     }
+
+    .lang-box {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .lang-img {
+            height: 20px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+
+    
     
 }
