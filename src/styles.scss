@@ -2,16 +2,46 @@
     margin: 0;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth; 
+    max-width: 1920px;
 }
 
 html {
     background: #151D2E;
+    max-width: 1920px;
 }
 
 body {
     background: #151D2E;
     margin: 0 auto;
     background-position: 50% 50%;
+    
+}
+
+.btn-primary {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* background-color: #70E61C; */
+    background-color: #60c518;
+    color: white;
+    font-size: 16.5px;
+    font-weight: 500;
+    line-height: 27.6px;
+
+    &:hover {
+        /* background-color: #9647FE; */
+        background-color: #9447FB;
+        cursor: pointer;
+    }
 }
 
 //FONTS

@@ -80,7 +80,7 @@ nav {
 
         &:hover {
             cursor: pointer;
-            color: #9647FE;
+            color: #70E61C;
         }
     }
 
@@ -96,6 +96,7 @@ nav {
 
             &:hover {
                 scale: 1.3;
+                box-shadow: #70E61C 0px 0px 0px 2px;
             }
         }
     }
