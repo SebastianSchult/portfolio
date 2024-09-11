@@ -1,1 +1,16 @@
-<p>skills works!</p>
+<div class="skills-bg">
+    <img class="img" src="assets/img/background/28. Hero Background.png" alt="">
+    <img class="img img-below" src="assets/img/background/28. Hero Background.png" alt="">
+</div>
+<section id="skills" >
+    <div class="skills-class">
+        <div class="skills-claas-img skill-item-fade-in">
+            <div *ngFor="let skill of skills" class="skill-item">
+                <img [src]="skill.src" alt="">
+                <p class="skill-description">{{ skill.description }}</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
