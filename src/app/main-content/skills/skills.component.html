@@ -1,20 +1,45 @@
 <div class="skills-bg">
-    <img class="img" src="assets/img/background/28. Hero Background.png" alt="">
-    <img class="img img-below" src="assets/img/background/28. Hero Background.png" alt="">
+  <img class="img" src="assets/img/background/28. Hero Background.png" alt="" />
+  <img
+    class="img img-below"
+    src="assets/img/background/28. Hero Background.png"
+    alt=""
+  />
 </div>
-<section id="skills" >
-    <div class="skills-class">
-        <div class="skills-claas-img skill-item-fade-in">
-            <div *ngFor="let skill of skills" class="skill-item">
-                <img [src]="skill.src" alt="">
-                <p class="skill-description">{{ skill.description }}</p>
-            </div>
-        </div>
-        <div class="continous skill-item">
-            <img src="../../../assets/img/skills/14. Icons.svg" alt="">
-            <p class="skill-description">Continually learning</p>
-        </div>
+<section id="skills">
+  <div class="skills-class">
+    <div class="skills-claas-img skill-item-fade-in">
+      <div *ngFor="let skill of skills" class="skill-item">
+        <img [src]="skill.src" alt="" />
+        <p class="skill-description">{{ skill.description }}</p>
+      </div>
     </div>
+    <div class="continous skill-item">
+      <img src="../../../assets/img/skills/14. Icons.svg" alt="" />
+      <p class="skill-description">Continually learning</p>
+    </div>
+  </div>
 
+  <div class="skills-text-section">
+    <div class="skills-headline"></div>
+    <h1>Skills</h1>
+    <hr />
+    <div class="skills-text-block">
+      <p>
+        My journey has involved working on differnent projects, employing a
+        range of frontend technologies and concepts. I am open to embracing new
+        technologies and methodologies to Countinously enhance my skills and
+        stay ahead in the ever-evolving landscape of web development.
+      </p>
 
+      <h2>Looking for another Skill?</h2>
+      <p>
+        Feel free to contact me. I look forward to expanding on my previous
+        knowledge.
+      </p>
+      <a href="#contact" class="btn-respond btn-ref">
+        <button class="btn-primary margin64 btn-bigger">Get in touch</button>
+      </a>
+    </div>
+  </div>
 </section>
