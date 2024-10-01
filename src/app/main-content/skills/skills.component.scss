@@ -81,17 +81,7 @@
     padding-top: 20px;
   }
 
-  .continous {
-    padding-left: 100px;
-
-    img {
-        &:hover {
-            cursor: pointer;
-            
-            
-        }
-    }
-  }
+  
 
   .skills-text-section {
     padding-top: 64px;
@@ -131,7 +121,8 @@ h2 {
 .skills-text-block {
   display: flex;
   flex-direction: column;
-  padding: 64px 64px 24px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
@@ -144,6 +135,40 @@ h2 {
 
 .skillstext-dif-color {
   color: #9747FF;
+}
+
+.continous {
+    max-width: 25%; /* Maximale Breite, um 4 Elemente in einer Zeile zu halten */
+    box-sizing: border-box; /* Inklusive Padding und Border in der Breitenberechnung */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    padding-left: 100px;
+   
+}
+
+.continous:hover .skill-description {
+  opacity: 0;  
+  transition: opacity 0.3s ease-in-out;  
+}
+
+.continous img {
+  transition: transform 0.3s ease-in-out;
+  height: 80px;
+  z-index: 8;
+}
+
+.continous-img2 {
+  bottom: 150px;
+  height: 290px !important; 
+  width: auto;   
+  transition: transform 0.3s ease-in-out; 
+  position: relative;
+  object-fit: contain;
+  left: 60px;
+  cursor: pointer;
 }
   
   @keyframes moveUp {

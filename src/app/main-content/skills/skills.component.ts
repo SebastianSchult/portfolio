@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   isVisible = true;
+  isHoveringContinous = false;
 
   skills = [
     { src: 'assets/img/skills/html.png' , description: 'HTML' },
@@ -27,5 +28,13 @@ export class SkillsComponent {
     
     
 
-  ]
+  ];
+
+  onHoverContinous() {
+    this.isHoveringContinous = true;
+  }
+
+  onLeaveContinous() {
+    this.isHoveringContinous = false;
+  }
 }
