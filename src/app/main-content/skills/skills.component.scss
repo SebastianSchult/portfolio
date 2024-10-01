@@ -38,7 +38,6 @@
     flex-direction: column;
     z-index: 4;
     padding-left: 100px;
-    width: 1340px;
     height: 662px;
 
   }
@@ -87,6 +86,8 @@
     padding-top: 64px;
     box-sizing: border-box;
     z-index: 5;
+    padding-left: 116px;
+    width: 100%;
 
     .skills-headline {
         position: relative;
@@ -127,10 +128,18 @@ h2 {
   font-weight: 400;
   line-height: 19.2px;
   text-align: left;
+  
+  left: 116px;
 
   .btn-padding {
     padding-top: 40px;
   }
+
+  p {
+    max-width: 471px;
+  }
+
+  
 }
 
 .skillstext-dif-color {
