@@ -2,7 +2,7 @@
     width: 1920px;
     height: 800px;
     left: 0px;
-    position: relative;
+    position: absolute;
     overflow: visible;
   }
   
@@ -25,13 +25,12 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Zeigt das rechte Drittel an */
   }
   
-  section {
+  #skills {
     display: flex;
-    position: relative;
-    top: -600px;
+    flex-direction: row;
     color: white;
     box-sizing: border-box;
-    padding-top: -280px;
+    padding-top: 80px;
   }
   
   .skills-class {
@@ -41,7 +40,7 @@
     padding-left: 100px;
     width: 1340px;
     height: 662px;
-    padding-top: 180px;
+
   }
   
   .skills-claas-img {
@@ -65,7 +64,6 @@
     text-align: center;
     padding: 80px;
     width: 88px;
-    
   }
   
   .skill-item img {
@@ -94,6 +92,59 @@
         }
     }
   }
+
+  .skills-text-section {
+    padding-top: 64px;
+    box-sizing: border-box;
+    z-index: 5;
+
+    .skills-headline {
+        position: relative;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        hr {
+          width: 100%;
+          border: 4px solid #1CDAE6;
+          border-radius: 24px;
+        }
+  }
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: left;
+}
+
+h2 {
+  padding: 16px 0 16px 0;
+  font-weight: 700;
+  line-height: 38.4px;
+  font-size: 32px;
+}
+
+.skills-text-block {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 64px 24px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+
+  .btn-padding {
+    padding-top: 40px;
+  }
+}
+
+.skillstext-dif-color {
+  color: #9747FF;
+}
   
   @keyframes moveUp {
     0% {
@@ -103,3 +154,18 @@
       transform: translateY(-20px);
     }
   }
+
+  .btn {
+    text-decoration: none;
+    padding-top: 72px;
+    
+
+    .btn-trans {
+        transition: 220ms;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
